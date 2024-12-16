@@ -1,0 +1,22 @@
+{
+    "name": "Python Codespaces Container",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "njpwerner.autodocstring",
+          "charliermarsh.ruff"
+        ]
+      }
+    },
+    "postCreateCommand": "pip install poetry && poetry config virtualenvs.in-project true && poetry install",
+    "mounts": [
+      "source=poetry-cache,target=/root/.cache/pypoetry,type=volume"
+    ],
+    "settings": {
+      "python.defaultInterpreterPath": "/usr/local/bin/python3"
+    }
+  }
+  
