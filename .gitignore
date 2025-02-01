@@ -162,8 +162,8 @@ cython_debug/
 #.idea/
 
 # Data files
-data/raw/*
-data/processed/*
+**/data/raw/*
+**/data/processed/*
 
 # VS Code settings
 .vscode/
