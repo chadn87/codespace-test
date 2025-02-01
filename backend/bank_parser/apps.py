@@ -1,6 +1,5 @@
 from django.apps import AppConfig
 
-
 class BankParserConfig(AppConfig):
-    default_auto_field = "django.db.models.BigAutoField"
-    name = "bank_parser"
+    name = 'bank_parser'  # Python import path
+    verbose_name = "Bank Statement Processor"
